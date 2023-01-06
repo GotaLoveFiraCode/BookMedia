@@ -15,3 +15,5 @@ Imagine this as a clone of *GoodWreads*. Just more **interesting**, running one 
 When you go to our website (presuming you already have an **account**) you will land on the **Homepage**. Here you can access all of your saved **Reads**, **Clubs**, and **Contacts**. If you don't want to keep *reading something*, or *message some friends*, you can select one of possible **tabs** at the edge of the screen. These will include **Account**, **Clubs**, **People**, **Reads**, **Settings**, and **Custom**.
 
 ## Accounts
+
+Anyone can create there own accounts, though this is not nesc
