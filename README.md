@@ -23,6 +23,8 @@ When you go to our **website** (presuming you already have an **account**) you w
 
 ## Chats
 
-If you posses an account, you can talk to whom ever you want--if its the *prince of the moon*, as long as they have an account, you can. Just type in there **messaging ID** (the equivalent to a user name shorthand, e.g. if you are called "FoxyBottle", your ID might be "fxyBOT", these are randomly generated), and tell them what you want. *Messaging IDs* are highly flexible, and if you have *Premium* you can even choose your *MID* out of five options. *MIDs* are unique, even if your user name isn't. *Chat'ing* is possible in *markdown*, or with our editor. **Chats** are *essential* for communicating with your friends over **BookMedia**.
+If you posses an **account**, you can talk to whom ever you want--if its the *prince of the moon*, as long as they have an account, you can. Just type in there **messaging ID** (the equivalent to a *user name* **shorthand**, e.g. if you are called *FoxyBottle*, your **ID** might be *fxyBOT*, these are randomly generated), and tell them what you want. *Messaging IDs* are highly **flexible**, and if you have *Premium* you can even choose your own *MID* out of **five options**. *MIDs* are **unique**, even if your **user name** isn't. *Chat'ing* is possible in *markdown*, or with our UI **editor**. **Chats** are *essential* for communicating with your friends over **BookMedia**.
 
-## 
+## Clubs
+
+Lorem Ipsum.
