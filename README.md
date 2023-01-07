@@ -1,6 +1,6 @@
 # BookMedia
 
-Note: *This is not something I am actually planning on doing. I was just bored...*
+Note: *This is not something I am actually planning on doing. I was just bored...*  \
 Imagine this as a clone of *GoodWeads*. Just more **interesting**, running one **Web3**, and in the style of **Social Media**.
 
 | Category              | Description                                                                                                                                                                                                                             |
