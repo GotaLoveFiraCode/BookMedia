@@ -1,0 +1,92 @@
+:root {
+	--main-text-color: #69443C;
+	--main-element-color: #DFDCD0;
+	--main-active-color: #ded7c0 ;
+	--secondary-active-color: #a79358;
+}
+
+.master {
+	background-image: url("assets/bg.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	color: var(--main-text-color);
+}
+
+@media (max-width: 900px) {
+
+	.m-header {
+		font-size: 4rem !important;
+		margin-top: 2em;
+		margin-bottom: 3rem;
+	}
+	.m-par {
+		font-size: 1rem;
+	}
+	.m-line {
+		font-size: 1rem !important;
+	}
+	.m-link {
+		margin-top: 40vmin !important;
+	}
+
+}
+
+.top-container {
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+	margin-top: 10vh;
+	font-size: 2rem;
+	margin-bottom: 1vmax;
+}
+
+.header-container {
+	margin-top: 10vh;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center safe;
+	align-items: center;
+	text-align: center;
+}
+
+.header {
+	font-family: "EB Garamond", serif;
+	font-size: calc(10vw - 10px);
+}
+
+.line {
+	font-family: "Open Sans", sans-serif;
+	font-size: calc(2vw - 1vmin);
+}
+
+.container-link {
+	margin-top: 20rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.container-button {
+	padding: 1em;
+	border: solid var(--main-active-color) 2px;
+	border-radius: 2em;
+	background: var(--main-element-color);
+	text-decoration: none;
+	color: var(--main-text-color);
+	transition: all 0.5s;
+}
+
+.container-button:hover {
+	border: solid var(--main-element-color) 2px;
+	background: var(--main-active-color);
+	color: var(--secondary-active-color);
+}
+
+.container-button:active {
+	border: solid var(--main-element-color) 2px;
+	background: var(--main-active-color);
+	color: var(--secondary-active-color);
+}
