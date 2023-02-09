@@ -1,0 +1,44 @@
+:root {
+	--main-color: rgb(105, 68, 60);
+	--main-bg: rgb(222, 215, 192);
+	--secondary-bg: rgb(223, 220, 208);
+	--main-border: rgb(200, 188, 150);
+	--main-active: rgb(175.31, 151.21, 79.688);
+}
+
+.container {
+	display: grid;
+
+}
+
+.header {
+
+}
+
+.logo {
+
+}
+
+.search {
+
+}
+
+.settings {
+
+}
+
+.sidebar {
+
+}
+
+.link {
+	transition: all 0.5 ease-out;
+}
+
+.link:hover {
+
+}
+
+.content {
+	display: grid;
+}
