@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans:wght@300&display=swap');
+
+.background {
+	background-image: url("bg.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	height: 100%; 
+}
+
+.font_serif {
+	font-family: 'EB Garamond', serif;
+}
+
+.font_sans {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.display {
+	display: flex;
+	/* justify-content: center; */
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+* {
+	color: #69443C !important;
+}
