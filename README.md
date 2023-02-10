@@ -1,7 +1,7 @@
 # BookMedia
 
 Note: *This is not something I am actually planning on doing. I was just bored...*  
-Imagine this as a clone of *GoodWeads*. Just more **interesting**, running one **Web3**, and in the style of **Social Media**.
+[i *want* to run it on web3, but I have no idea how to do this yet, so you can ignore this for now.] Imagine this as a clone of *GoodWeads*. Just more **interesting**, running one **Web3**, and in the style of **Social Media**.
 
 | Category              | Description                                                                                                                                                                                                                                              |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
