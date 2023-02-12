@@ -20,6 +20,18 @@
 	background-size: cover;
 }
 
+@media (max-width: 900px) {
+	.header {
+		font-size: 5rem !important;
+	}
+	.line {
+		font-size: 0.8rem !important;
+	}
+	.par {
+		font-size: 1rem;
+	}
+}
+
 .top-container {
 	font-family: var(--sans-font);
 	font-size: 1.75rem;
@@ -50,7 +62,7 @@
 
 .line {
 	font-family: var(--sans-font);
-	font-size: calc(2vw - 1.3vmin);
+	font-size: calc(2vw - 1vmin);
 }
 
 .container-link {

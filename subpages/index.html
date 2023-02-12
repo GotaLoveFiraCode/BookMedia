@@ -6,30 +6,37 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<title>Home - BookMedia</title>
 	<meta name="author" content="Laurens T. Rosinski">
-
-	<!-- Document Title -->
-	<title>Page Title</title>
-	
-	<!-- Base URL to use for all relative URLs contained within the document -->
-	<base href="https://gotalovefiracode.github.io/BookMedia/index.html">
-	
-	<!-- External CSS -->
-	<link rel="stylesheet" href="styles.css">
-	
-	<!-- In-document CSS -->
-	<style>
-		/* ... */
-	</style>
-	
-	<!-- JavaScript -->
-	<script src="script.js"></script>
-
+	<!-- <base href="https://gotalovefiracode.github.io/BookMedia/"> -->
+	<link rel="canonical" href="https://gotalovefiracode.github.io/BookMedia/subpages/index.html">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400&family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="logo.png" type="image/png">
 	<link rel="stylesheet" href="style.css">
+	<link rel="me" href="https://github.com/GotaLoveFiraCode" type="text/html">
+	<link rel="me" href="mailto:rosinski@duck.com">
+	<link rel="prefetch" href="logo.png">
+	<link rel="preload" href="logo.png">
+
+	<script>
+		window.addEventListener("load", () => {
+
+			const loader = document.querySelector(".loader");
+
+			loader.classList.add("loader--hidden");
+
+			loader.addEventListener("transitioned", () => {
+				document.body.removeChild(loader);
+			})
+		})
+	</script>	
 
 </head>
 <body>
 
-	<section>
+	<div class="loader"></div>
+
+	<main>
 		
 		<header>
 			
@@ -86,7 +93,7 @@
 			<p>THIS IS A PREVIEW</p>
 		</div>
 
-	</section>
+	</main>
 
 </body>
 </html>
