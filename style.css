@@ -20,89 +20,73 @@
 	background-size: cover;
 }
 
+.top-container {
+	font-family: var(--sans-font);
+	font-size: 1.75rem;
 
-@media screen and (min-width: 900px) {
+	margin-top: 10vh;
+	margin-bottom: 1.25vmax;
 
-	.top-container {
-		font-family: var(--sans-font);
-		font-size: 1.75rem;
-
-		margin-top: 10vh;
-		margin-bottom: 1.25vmax;
-
-		text-align: center;
-	}
-
-	.header-container {
-		display: flex;
-		flex-direction: column;
-
-		margin-top: 10vh;
-
-		text-align: center;
-
-		flex-wrap: wrap;
-		justify-content: center safe;
-		align-items: center;
-	}
-
-	.header {
-		font-family: var(--serif-font);
-		font-size: calc(10vw - 10px);
-	}
-
-	.line {
-		font-family: var(--sans-font);
-		font-size: calc(2vw - 1.3vmin);
-	}
-
-	.container-link {
-		display: flex;
-		flex-direction: row;
-
-		margin-top: 25vh;
-		margin-bottom: 1vh;
-
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-
-	.container-button {
-		padding: 1em;
-
-		transition: color .75s .5s, background .75s .5s, padding .75s;
-		text-decoration: none;
-
-		color: var(--main-text-color);
-		border: solid var(--main-active-color) 2px;
-		border-radius: 2em;
-		background: var(--main-element-color);
-		box-shadow: var(--main-shadow);
-	}
-
-	.container-button:hover {
-		padding: 2em;
-
-		color: var(--main-element-color);
-		background: var(--secondary-text-color);
-	}
-
-	.container-button:active {
-		padding: 1.5em;
-
-		color: var(--main-active-color);
-		background: var(--main-text-color);
-	}
+	text-align: center;
 }
 
-@media screen and (max-width: 900px) {
+.header-container {
+	display: flex;
+	flex-direction: column;
 
-	
+	margin-top: 10vh;
 
+	text-align: center;
+
+	flex-wrap: wrap;
+	justify-content: center safe;
+	align-items: center;
 }
 
-@media screen and (max-width: 450px) {
+.header {
+	font-family: var(--serif-font);
+	font-size: calc(10vw - 10px);
+}
 
+.line {
+	font-family: var(--sans-font);
+	font-size: calc(2vw - 1.3vmin);
+}
 
+.container-link {
+	display: flex;
+	flex-direction: row;
 
+	margin-top: 25vh;
+	margin-bottom: 1vh;
+
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.container-button {
+	padding: 1em;
+
+	transition: color .75s .5s, background .75s .5s, padding .75s;
+	text-decoration: none;
+
+	color: var(--main-text-color);
+	border: solid var(--main-active-color) 2px;
+	border-radius: 2em;
+	background: var(--main-element-color);
+	box-shadow: var(--main-shadow);
+}
+
+.container-button:hover {
+	padding: 2em;
+
+	color: var(--main-element-color);
+	background: var(--secondary-text-color);
+}
+
+.container-button:active {
+	padding: 1.5em;
+
+	color: var(--main-active-color);
+	background: var(--main-text-color);
 }
