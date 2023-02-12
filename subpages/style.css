@@ -29,7 +29,8 @@ body
 	background-size: cover;*/
 }
 
-.loader {
+.loader
+{
 	position: fixed;
 	z-index: 100000;
 	right: 0;
@@ -47,14 +48,15 @@ body
 	align-items: center;
 	justify-content: center;
 }
-
-.loader--hidden {
+.loader--hidden
+{
 	visibility: hidden;
 
 	opacity: 0;
 }
 
-.loader::after {
+.loader::after
+{
 	width: 7rem;
 	height: 7rem;
 
@@ -66,15 +68,11 @@ body
 	border-radius: 50%;
 }
 
-@keyframes loading {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(0.5turn);
-	}
+@keyframes loading
+{
+	from { transform: rotate(0deg); }
+	to { transform: rotate(.5turn); }
 }
-
 
 main
 {
@@ -90,7 +88,6 @@ main
 	"nav preview-4 preview-5 preview-6"
 	"nav preview-7 preview-8 preview-9";
 }
-
 
 header
 {
@@ -144,10 +141,11 @@ header
 
 nav
 {
+	font-family: var(--sans);
+	font-size: 2rem;
+
 	display: inline-flex;
 	flex-direction: column;
-	flex-wrap: nowrap;
-	font-family: var(--sans);
 
 	padding: 1rem;
 
@@ -155,8 +153,8 @@ nav
 	border-radius: 1rem;
 	background: var(--bg);
 
+	flex-wrap: nowrap;
 	grid-area: nav;
-	font-size: 2rem;
 }
 
 .link
@@ -175,14 +173,14 @@ nav
 	height: 2px;
 
 	content: "";
-	transition: width 1s .1s ease;
+	transition: width 0.75s .1s ease;
 
 	background: var(--color);
 }
 
 .link:hover::after
 {
-	width: ;
+	width: 100%;
 
 	transition: all .5 .2 ease;
 }
@@ -191,7 +189,7 @@ nav
 .preview
 {
 	font-family: var(--serif);
-	padding: 3rem;
+	padding: 4rem;
 
 	text-align: center;
 
