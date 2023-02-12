@@ -61,7 +61,7 @@ body
 	height: 7rem;
 
 	content: "";
-	animation: loading 1s ease infinite;
+	animation: loading 1.5s ease infinite;
 
 	border: .5rem solid var(--border);
 	border-top-color: var(--secondary-bg);
@@ -70,8 +70,9 @@ body
 
 @keyframes loading
 {
-	from { transform: rotate(0deg); }
-	to { transform: rotate(.5turn); }
+	0% { transform: rotate(0deg); }
+	50% { transform: rotate(180deg); }
+	100% { transform: rotate(360deg); }
 }
 
 main
