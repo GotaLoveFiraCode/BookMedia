@@ -1,17 +1,17 @@
 :root
 {
-	--color: rgb(105, 68, 60);
-	--bg: rgb(222, 215, 192);
-	--secondary: rgb(200, 188, 150);
-	--border: rgb(175.31, 151.21, 79.688);
-	--secondary-bg: #dfdcd0;
+	--color: #193340;
+	--bg: #c4d6b0;
+	--secondary: #f24736;
+	--border: #1cab80;
+	--secondary-bg: #f7edd4;
 
 
 	--serif: "EB Garamond", serif;
 	--sans: "Open Sans", sans-serif;
 
-	--shadow: 5px 5px 15px 0px #69443c;
-	--secondary-shadow: 10px 10px 25px 5px #785a48;
+	--shadow: 5px 5px 15px 0px #168b79;
+	--secondary-shadow: 10px 10px 25px 5px #1aa590;
 
 	--main-gradient: radial-gradient( var(--bg), var(--secondary), var(--border), var(--color) );
 	--secondary-gradient: linear-gradient( to top right, var(--bg), var(--border), var(--color));
@@ -80,9 +80,9 @@
 		text-decoration: none;
 
 		color: var(--color);
-		border: solid var(--border) 1px;
+		border: solid var(--secondary) 1px;
 		border-radius: 3rem;
-		background: var(--secondary);
+		background: var(--secondary-bg);
 		transition: all 0.3s;
 	}
 
@@ -142,14 +142,16 @@
 	.preview
 	{
 		font-family: var(--serif);
+		font-weight: bolder;
+		font-size: x-large;
 		padding: 4rem;
 
 		text-align: center;
 
-		color: var(--secondary-bg);
-		border: solid var(--border) 5px;
+		color: var(--color);
+		border: solid var(--secondary) 2px;
 		border-radius: 1rem;
-		background-image: var(--secondary-gradient);
+		background-image: url("preview2.jpeg");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -312,18 +314,160 @@
 
 @media screen and (max-width: 900px)
 {
-	
+	main
+	{
+		display: grid;
+
+		margin: 1vmax;
+
+		grid-gap: 1rem;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 4rem 1fr 1fr 1fr 36rem;
+		grid-template-areas:
+			"header header header"
+			"preview-1 preview-2 preview-3"
+			"preview-4 preview-5 preview-6"
+			"preview-7 preview-8 preview-9"
+			"nav nav nav";
+	}
+
+	header
+	{
+		font-family: var(--serif);
+
+		display: flex;
+		flex-direction: row;
+
+		border: solid var(--border) 1px;
+		border-radius: 1rem;
+		background: var(--bg);
+
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		grid-area: header;
+	}
+
+	/* #logo
+	{
+		width: auto;
+		height: 4rem;
+		margin-left: 4px;
+
+		border: solid var(--secondary) 1px;
+		border-radius: 50%;
+
+		align-self: center;
+	}*/
+
+	#search
+	{
+		padding: 0.5rem;
+		margin-left: 1rem;
+		border: solid var(--secondary) 1px;
+		border-radius: 2rem;
+	}
+
+	#settings
+	{
+		margin-right: 1rem;
+		padding: 0.5rem;
+
+		text-decoration: none;
+
+		color: var(--color);
+		border: solid var(--border) 1px;
+		border-radius: 2rem;
+		background: var(--secondary);
+		transition: all 0.3s ease;
+	}
+
+	#settings:active
+	{
+		color: var(--secondary-bg);
+	}
+
+	nav
+	{
+		font-family: var(--sans);
+		font-size: x-large;
+
+		display: flex;
+		flex-direction: column;
+
+		padding: 1rem;
+
+		border: solid var(--border) 2px;
+		border-radius: 1rem;
+		background: var(--bg);
+
+		flex-wrap: wrap;
+		grid-area: nav;
+	}
+
+	.link
+	{
+		transition: all .3 ease-out;
+		text-decoration: none;
+
+		color: var(--color);
+	}
+
+	.link::after
+	{
+		display: block;
+
+		width: 0;
+		height: 2px;
+
+		content: "";
+		transition: width 0.5s ease;
+
+		background: var(--color);
+	}
+
+	.link:active::after
+	{
+		width: 100%;
+
+		transition: all .5 .2 ease;
+	}
+
+
+	.preview
+	{
+		font-family: var(--serif);
+		padding: 4rem;
+
+		text-align: center;
+
+		color: var(--secondary-bg);
+		border: solid var(--border) 5px;
+		border-radius: 40% / 60%;
+		background-image: var(--secondary-gradient);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		box-shadow: var(--shadow);
+		transition: all 0.3s ease;
+	}
+
+	.preview:active
+	{
+		box-shadow: var(--secondary-shadow);
+	}
 }
 
 body
 {
-	background-color: var(--secondary-bg);
+	background-image: url(bg.jpeg);
+	/* background-color: var(--secondary-bg); */
+	/* background-image: var(--main-gradient); */
 
-	/*background-image: var(--main-gradient);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
-	background-size: cover;*/
+	background-size: cover;
 }
 
 .loader
@@ -419,6 +563,6 @@ body
 
 hr
 {
-	color: var(--color);
+	color: var(--secondary);
 	width: 80%;
 }
