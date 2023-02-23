@@ -1,20 +1,20 @@
 :root {
-	--main-text-color: #69443C;
-	--secondary-text-color: #785a48;
-	--main-element-color: #DFDCD0;
-	--main-active-color: #ded7c0 ;
-	--secondary-active-color: #a79358;
+	--main-text-color: #776792;
+	--main-bg: #efe8ef;
+	--main-active-color: #d7d5e9 ;
+	--secondary-active-color: #6f4d92;
 
 	--serif-font: "EB Garamond", serif;
 	--sans-font: "Open Sans", sans-serif;
 
-	--main-shadow: 5px 5px 15px 0px #a79358;
+	--main-shadow: 5px 5px 15px 0px #8f8f8fe6;
 }
 
 .master {
 	color: var(--main-text-color);
-	background-image: url("assets/bg.jpg");
-	background-repeat: no-repeat;
+	/* background-image: url("assets/bg.jpg"); */
+	/* background-repeat: no-repeat; */
+	background-color: var(--main-bg);
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
@@ -34,7 +34,7 @@
 
 .top-container {
 	font-family: var(--sans-font);
-	font-size: 1.75rem;
+	font-size: 1.5rem;
 
 	margin-top: 10vh;
 	margin-bottom: 1.25vmax;
@@ -81,7 +81,7 @@
 	padding-left: 2.5em;
 	padding-right: 2.5em;
 
-	transition: color .9s .0s, background .75s .1s, padding .75s 0.1s;
+	transition: color .9s, background .9s, padding .7s;
 	text-decoration: none;
 
 	color: var(--main-text-color);
@@ -94,8 +94,8 @@
 .container-button:hover {
 	padding: 2em;
 
-	color: var(--main-element-color);
-	background: var(--secondary-text-color);
+	color: var(--main-active-color);
+	background: var(--secondary-active-color);
 }
 
 .container-button:active {
