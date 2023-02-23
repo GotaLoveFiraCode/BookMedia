@@ -78,14 +78,16 @@
 
 .container-button {
 	padding: 1em;
+	padding-left: 2.5em;
+	padding-right: 2.5em;
 
-	transition: color .75s .5s, background .75s .5s, padding .75s;
+	transition: color .9s .0s, background .75s .1s, padding .75s 0.1s;
 	text-decoration: none;
 
 	color: var(--main-text-color);
 	border: solid var(--main-active-color) 2px;
 	border-radius: 2em;
-	background: var(--main-element-color);
+	background: /*var(--main-element-color)*/ white;
 	box-shadow: var(--main-shadow);
 }
 
