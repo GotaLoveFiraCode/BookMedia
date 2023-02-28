@@ -1,19 +1,20 @@
 :root
 {
-	--color: #776792;
-	--bg: #efe8ef;
-	--secondary: #d7d5e9;
-	--border: #6f4d92;
+	--color       : #776792;
+	--bg          : #efe8ef;
+	--secondary   : #d7d5e9;
+	--border      : #6f4d92;
 	--secondary-bg: #e6d5ea;
 
 
 	--serif: "EB Garamond", serif;
-	--sans: "Open Sans", sans-serif;
+	--sans : "Open Sans", sans-serif;
 
-	--shadow: 5px 5px 10px 0px #8f8f8fe6;
-	--secondary-shadow: 10px 10px 20px 0px #808080e6;
+	--shadow       : 5px 5px 10px #8f8f8fe6;
+	--scndry-shadow: 10px 15px 15px #808080b3;
+	--shadow-s     : 5px 5px 5px #9f9f9fcc;
 
-	--main-gradient: radial-gradient( var(--bg), var(--secondary-bg) );
+	--main-gradient     : radial-gradient( var(--bg), var(--secondary-bg) );
 	--secondary-gradient: linear-gradient( to top right, var(--bg), var(--border), var(--color));
 }
 
@@ -88,7 +89,8 @@
 
 	#settings:hover
 	{
-		box-shadow: var(--shadow);
+		padding: 0.7rem;
+		box-shadow: var(--shadow-s);
 	}
 
 
@@ -112,7 +114,7 @@
 
 	.link
 	{
-		transition: all .3 ease-out;
+		transition: all .5s ease;
 		text-decoration: none;
 
 		color: var(--color);
@@ -123,10 +125,10 @@
 		display: block;
 
 		width: 0;
-		height: 2px;
+		height: 1.5px;
 
 		content: "";
-		transition: width 0.75s .1s ease;
+		transition: width 0.5s ease-out;
 
 		background: var(--color);
 	}
@@ -135,7 +137,7 @@
 	{
 		width: 100%;
 
-		transition: all .5 .2 ease;
+		transition: all .5 .2 ease-in;
 	}
 
 
@@ -143,29 +145,28 @@
 	{
 		font-family: var(--serif);
 		font-weight: bolder;
-		font-size: x-large;
-		padding: 4rem;
+		font-size  : x-large;
+		padding    : 4rem;
 
 		text-align: center;
 
-		color: var(--color);
-		border: solid var(--secondary) 2px;
-		border-radius: 1rem;
-		background-image: url("preview2.jpeg");
-		background-repeat: no-repeat;
+		background-image   : url("preview2.jpeg");
+		background-repeat  : no-repeat;
 		background-position: center;
-		background-size: cover;
-		box-shadow: var(--shadow);
-		transition: all 0.5s;
+		background-size    : cover;
+
+		color        : var(--color);
+		border       : solid var(--secondary) 2px;
+		border-radius: 1rem;
+		box-shadow   : var(--shadow);
+		transition   : all 0.15s ease-in;
 	}
 
 	.preview:hover
 	{
-		margin-bottom: 0.3rem;
-		margin-top: -0.3rem;
-		font-size: 2rem;
-		padding: 2rem;
-		box-shadow: var(--secondary-shadow);
+		margin-bottom: 0.5rem;
+		margin-top: -0.5rem;
+		box-shadow: var(--scndry-shadow);
 	}
 }
 
@@ -313,7 +314,7 @@
 	.preview:active
 	{
 		font-size: 4rem;
-		box-shadow: var(--secondary-shadow);
+		box-shadow: var(--scndry-shadow);
 	}
 }
 
@@ -459,7 +460,7 @@
 
 	.preview:active
 	{
-		box-shadow: var(--secondary-shadow);
+		box-shadow: var(--scndry-shadow);
 	}
 }
 
